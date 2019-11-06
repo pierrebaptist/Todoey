@@ -29,7 +29,14 @@
                             <outlet property="delegate" destination="jdu-AZ-8XV" id="1fe-kC-9sO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="8HB-QE-DRt"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="8HB-QE-DRt">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="jaV-c4-Rk1">
+                            <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="jdu-AZ-8XV" id="upH-Bn-wcc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ps7-ng-Mkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
